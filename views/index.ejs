@@ -10,7 +10,7 @@
     <h1> 댓글 목록</h1>
     <ul>
     <% for (comment of comments) { %>
-        <li><%= comment.id %><%= comment.content %></li>
+        <li><%= comment.content %></li>
 
         <form action="/update/<%= comment.id %>" method="post">
             <input type="text" id="lname" name="content">
